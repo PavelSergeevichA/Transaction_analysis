@@ -96,3 +96,14 @@ def average_spent(operations: list, counted_operations: dict) -> list:
             "cashback": round(-sum(card_2) / 100, 2),
         },
     ]
+
+
+def top_operations(operations: list, reverse=True) -> list:
+    """Возвращает 5 самых крупных операций"""
+
+    operations = sorted(operations, key=lambda operation: operation['Сумма операции'], reverse=True)[:5]
+    top_5_operations = [
+        {key: d[key] for key in ["Дата платежа", "Сумма операции", "Категория", "Описание"]}
+        for d in operations
+    ]
+    return top_5_operations

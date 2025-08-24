@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Starting">
-      <change afterPath="$PROJECT_DIR$/data/answer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/user_settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Got functions part web_pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
@@ -33,6 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PavelSergeevichA&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PavelSergeevichA/Transaction_analysis.git&quot;,
+    &quot;accountId&quot;: &quot;2d3ab225-65aa-439c-8ec1-d063480fabfc&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -54,7 +64,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;kursa4__1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Transaction_analysis/data&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Transaction_analysis/data&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,6 +74,7 @@
       <recent name="D:\Projects\Transaction_analysis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Transaction_analysis\src" />
       <recent name="D:\Projects\Transaction_analysis" />
     </key>
   </component>
@@ -126,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755009909822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Got functions part web_pages">
+      <option name="closed" value="true" />
+      <created>1755760615289</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755760615289</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting" />
+    <MESSAGE value="Got functions part web_pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got functions part web_pages" />
   </component>
 </project>
