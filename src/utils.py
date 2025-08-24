@@ -1,13 +1,13 @@
+import json
+import logging
+import os
 from typing import Any
 
 import logger
-import json
-import requests
-import logging
 import pandas as pd
-from dotenv import load_dotenv
-import os
+import requests
 import yfinance as yf
+from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")

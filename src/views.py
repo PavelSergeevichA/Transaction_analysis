@@ -1,14 +1,10 @@
 import re
+from collections import Counter, defaultdict
+from datetime import datetime, timedelta
 from typing import Any
 
 import numpy as np
 import pandas as pd
-from collections import Counter, defaultdict
-from datetime import datetime, timedelta
-
-from src.constants import OPERATIONS
-
-# operation_date = "10.01.2018 23:03:35"
 
 
 def daypart(operation_date: str) -> str:

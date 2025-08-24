@@ -95,3 +95,23 @@ OPERATIONS = [
      'Округление на инвесткопилку': 0,
      'Сумма операции с округлением': 325.0}
 ]
+
+
+RESPONSE = (200, {
+        #"success": true,
+        "timestamp": 1755847756,
+        "base": "RUB",
+        "date": "2025-08-22",
+        "rates": {
+            "USD": 0.012422,
+            "EUR": 0.01071
+        }
+    }
+    )
+
+
+USER_SETTINGS = {
+    "user_currencies": ["USD", "EUR"],
+    "user_stocks": ["AAPL", "AMZN", "GOOGL", "MSFT", "TSLA"],
+}
+

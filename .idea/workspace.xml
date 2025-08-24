@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Got functions part web_pages">
+    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Got simple search and finished module utils.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reports.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
@@ -146,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755760615289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Got simple search and finished module utils.py">
+      <option name="closed" value="true" />
+      <created>1756044480917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756044480917</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting" />
     <MESSAGE value="Got functions part web_pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got functions part web_pages" />
+    <MESSAGE value="Got simple search and finished module utils.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got simple search and finished module utils.py" />
   </component>
 </project>
