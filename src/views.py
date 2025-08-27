@@ -1,5 +1,5 @@
 import re
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import datetime, timedelta
 from typing import Any
 
@@ -42,12 +42,12 @@ def date_list(operation_date_str: str) -> list:
     """Возвращает список с диапазоном дат от первого числа месяца до указанной даты"""
     operation_date = datetime.strptime(operation_date_str, "%d.%m.%Y %H:%M:%S")
     start_date = operation_date.replace(day=1)
-    date_list = []
+    dates = []
     current_date = start_date
     while current_date <= operation_date:
-        date_list.append(current_date.strftime("%d.%m.%Y %H:%M:%S"))
+        dates.append(current_date.strftime("%d.%m.%Y %H:%M:%S"))
         current_date += timedelta(days=1)
-    return date_list
+    return dates
 
 
 def operation_counts(operations: list) -> Counter[Any]:
