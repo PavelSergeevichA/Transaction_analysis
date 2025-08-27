@@ -52,15 +52,9 @@ def date_list(operation_date_str: str) -> list:
 
 def operation_counts(operations: list) -> Counter[Any]:
     """Возвращает список словарей, где ключ - номер карты, значение - количество операций по этой карте"""
-    for operation in operations:
-        if operation["Номер карты"] is None:
-            operations.remove(operation)
-            continue
-        else:
-            continue
-    keys_to_count = [d["Номер карты"] for d in operations]
-    counted_operations = Counter(keys_to_count)
-    return counted_operations
+    filtered_operations = [op for op in operations if op["Номер карты"] is not None]
+    keys_to_count = [d["Номер карты"] for d in filtered_operations]
+    return Counter(keys_to_count)
 
 
 def average_spent(operations: list, counted_operations: dict) -> list:
