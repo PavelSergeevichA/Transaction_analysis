@@ -1,8 +1,8 @@
+from collections import Counter
+
 import pytest
 
-from datetime import datetime, timedelta
-from collections import Counter
-from src.views import daypart, sort_by_date, date_list, operation_counts, average_spent, top_operations
+from src.views import average_spent, date_list, daypart, operation_counts, sort_by_date, top_operations
 
 
 @pytest.mark.parametrize("time_str, expected", [
@@ -116,11 +116,13 @@ def test_date_list_single_day():
     expected = ["01.01.2023 00:00:00"]
     assert result == expected
 
+
 def test_date_list_first_day():
     """Тест для первого дня месяца"""
     result = date_list("01.05.2023 12:30:45")
     expected = ["01.05.2023 12:30:45"]
     assert result == expected
+
 
 def test_date_list_middle_of_month():
     """Тест для середины месяца"""

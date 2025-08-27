@@ -76,6 +76,6 @@ def get_stocks(user_settings: dict) -> list[Any]:
     for stock in user_settings["user_stocks"]:
         ticker_data = yf.Ticker(stock)
         current_price = ticker_data.info["currentPrice"]
-        stocks.append({"stock" :stock, "price": current_price})
+        stocks.append({"stock": stock, "price": current_price})
         logger.info(f"Данные о стоимости акций {user_settings["user_stocks"]} получены")
     return stocks

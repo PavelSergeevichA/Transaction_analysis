@@ -1,12 +1,13 @@
-import pytest
-import pandas as pd
-from unittest.mock import patch, Mock
-import tempfile
-import os
 import json
+import os
+import tempfile
+from unittest.mock import Mock, patch
+
+import pandas as pd
+import pytest
 import requests
 
-from src.utils import get_operations_excel, open_json, get_currency, get_stocks
+from src.utils import get_currency, get_operations_excel, get_stocks, open_json
 
 
 class TestGetOperationsExcel:
@@ -54,7 +55,6 @@ class TestGetOperationsExcel:
 
         finally:
             os.unlink(tmp_path)
-
 
     def test_nonexistent_file(self):
         """Тест обработки несуществующего файла"""
@@ -302,11 +302,10 @@ def test_get_stocks_none_price():
     mock_ticker.info = {"currentPrice": None}
 
     with patch('src.utils.yf.Ticker') as mock_ticker_class:
-        with patch('src.utils.logger') as mock_logger:
-            mock_ticker_class.return_value = mock_ticker
+        mock_ticker_class.return_value = mock_ticker
 
-            result = get_stocks(user_settings)
+        result = get_stocks(user_settings)
 
-            assert len(result) == 1
-            assert result[0]["stock"] == "AAPL"
-            assert result[0]["price"] is None
+        assert len(result) == 1
+        assert result[0]["stock"] == "AAPL"
+        assert result[0]["price"] is None
