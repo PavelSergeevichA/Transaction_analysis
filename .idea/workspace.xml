@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Got tests for views.py">
+    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Main func done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/answer.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_reports.test_spending_by_category_basic.executor": "Run",
     "Python tests.Python tests for test_services.test_simple_search_by_description.executor": "Run",
     "Python tests.Python tests for test_services.test_simple_search_empty_request.executor": "Run",
     "Python tests.Python tests for test_services.test_simple_search_whitespace_request.executor": "Run",
@@ -124,7 +120,44 @@
       <recent name="D:\Projects\Transaction_analysis\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_utils.test_get_stocks_none_price">
+  <component name="RunManager" selected="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Transaction_analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_reports.test_spending_by_category_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Transaction_analysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_reports.test_spending_by_category_basic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_services.test_simple_search_by_description" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
@@ -140,7 +173,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_services.test_simple_search_empty_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.TestGetCurrency.test_successful_response" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,22 +184,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_services.test_simple_search_empty_request&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_services.test_simple_search_whitespace_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Transaction_analysis" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_services.test_simple_search_whitespace_request&quot;" />
+      <option name="_new_target" value="&quot;test_utils.TestGetCurrency.test_successful_response&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -185,28 +203,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_views.test_top_operations_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Transaction_analysis" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_views.test_top_operations_basic&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests for test_reports.test_spending_by_category_basic" />
         <item itemvalue="Python tests.Python tests for test_utils.test_get_stocks_none_price" />
         <item itemvalue="Python tests.Python tests for test_services.test_simple_search_by_description" />
-        <item itemvalue="Python tests.Python tests for test_services.test_simple_search_whitespace_request" />
-        <item itemvalue="Python tests.Python tests for test_services.test_simple_search_empty_request" />
-        <item itemvalue="Python tests.Python tests for test_views.test_top_operations_basic" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756291132362</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Small fixes">
+      <option name="closed" value="true" />
+      <created>1756296884901</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756296884901</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Main func done">
+      <option name="closed" value="true" />
+      <created>1756303933337</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756303933337</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +329,8 @@
     <MESSAGE value="Some fixes" />
     <MESSAGE value="Got tests for utils.py" />
     <MESSAGE value="Got tests for views.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got tests for views.py" />
+    <MESSAGE value="Small fixes" />
+    <MESSAGE value="Main func done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main func done" />
   </component>
 </project>

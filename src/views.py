@@ -96,4 +96,9 @@ def top_operations(operations: list, reverse=True) -> list:
         {key: d[key] for key in ["Дата платежа", "Сумма операции", "Категория", "Описание"]}
         for d in operations
     ]
+    for operation in top_5_operations:
+        operation["date"] = operation.pop("Дата платежа")
+        operation["amount"] = operation.pop("Сумма операции")
+        operation["category"] = operation.pop("Категория")
+        operation["description"] = operation.pop("Описание")
     return top_5_operations

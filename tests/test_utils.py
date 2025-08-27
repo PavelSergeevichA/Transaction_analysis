@@ -161,14 +161,14 @@ class TestGetCurrency:
     @patch('src.utils.requests.get')
     def test_successful_response(self, mock_get):
         """Тест успешного получения данных от API"""
-        # Мокируем успешный ответ
         mock_response = Mock()
-        mock_response.status_code = 200
         mock_response.json.return_value = {
-            "rates": {"USD": 0.011, "EUR": 0.010},
-            "base": "RUB",
-            "date": "2023-12-01"
+            "rates": {
+                "USD": 0.011,
+                "EUR": 0.0095
+            }
         }
+        mock_response.raise_for_status.return_value = None
         mock_get.return_value = mock_response
 
         user_settings = {
@@ -177,10 +177,13 @@ class TestGetCurrency:
 
         result = get_currency(user_settings)
 
-        # Проверяем, что функция вернула правильные данные
-        assert result["rates"]["USD"] == 0.011
-        assert result["rates"]["EUR"] == 0.010
-        assert result["base"] == "RUB"
+        expected_result = [
+            {'currency': 'USD', 'rate': round(1 / 0.011, 2)},
+            {'currency': 'EUR', 'rate': round(1 / 0.0095, 2)}
+        ]
+
+        assert result == expected_result
+        mock_get.assert_called_once()
 
         # Проверяем, что запрос был сделан с правильными параметрами
         mock_get.assert_called_once()

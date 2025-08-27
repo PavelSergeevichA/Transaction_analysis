@@ -29,7 +29,7 @@ def get_operations_excel(input_file_excel) -> list:
     return operations
 
 
-def open_json(input_file) -> list:
+def open_json(input_file) -> dict:
     """Возвращает данные из json файла"""
     logger.info(f"Начало обработки файла: {input_file}")
     data = []
@@ -43,7 +43,7 @@ def open_json(input_file) -> list:
         return data
 
 
-def get_currency(user_settings: dict[str, Any]) -> dict[str, Any]:
+def get_currency(user_settings: dict[str, Any]) -> dict[str, str] | list[Any]:
     """Возвращает словарь с курсом валют"""
 
     url = (
@@ -59,8 +59,11 @@ def get_currency(user_settings: dict[str, Any]) -> dict[str, Any]:
 
         result = response.json()  # Преобразуем в словарь
         logger.info("Данные API получены успешно")
+        formatted_result = []
+        for rate in result["rates"]:
+            formatted_result.append({'currency': rate, 'rate': round(1 / result["rates"].get(rate), 2)})
 
-        return result
+        return formatted_result
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Ошибка при получении данных: {e}")

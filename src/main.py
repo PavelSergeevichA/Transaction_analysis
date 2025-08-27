@@ -1,17 +1,30 @@
-from utils import get_operations_excel
-from views import daypart, sort_by_date, date_list, average_spent, operation_counts
-
-operation_date = '10.01.2018 23:03:35'
-input_file_excel = "../data/operations.xlsx"
+import json
+from utils import get_operations_excel, get_currency, open_json, get_stocks
+from views import (average_spent, date_list, daypart, operation_counts,
+                   sort_by_date, top_operations)
 
 
 if __name__ == "__main__":
+    operation_date = '20.02.2018 18:53:30'
+    input_file_excel = "../data/operations.xlsx"
+    input_file_user_settings = "../data/user_settings.json"
+    greeting = daypart(operation_date)
     all_operations = get_operations_excel(input_file_excel=input_file_excel)
     operations = sort_by_date(all_operations, operations_date=date_list(operation_date))
-
     counted_operations = dict(operation_counts(operations=operations))
-    print(counted_operations)
+    cards = average_spent(operations, counted_operations)
+    top_transactions = top_operations(operations)
+    user_settings = open_json(input_file_user_settings)
+    currency_rates = get_currency(user_settings=user_settings)
+    stock_prices = get_stocks(user_settings=user_settings)
 
-    print(daypart(operation_date))
-    print(average_spent(operations=operations, counted_operations=counted_operations))
-    #print(operations)
+    answer = {
+        "greeting": greeting,
+        "cards": cards,
+        "top_transactions": top_transactions,
+        "currency_rates": currency_rates,
+        "stock_prices": stock_prices
+    }
+
+    json_data = json.dumps(answer)
+    print(json_data)
