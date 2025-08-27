@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Main func done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/answer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
     "Python.views.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "kursa4__1",
+    "git-widget-placeholder": "feature/kursovaya",
     "last_opened_file_path": "D:/Projects/Transaction_analysis",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -120,7 +120,7 @@
       <recent name="D:\Projects\Transaction_analysis\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
@@ -158,7 +158,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_services.test_simple_search_by_description" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.TestGetCurrency.test_http_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,7 +169,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_services.test_simple_search_by_description&quot;" />
+      <option name="_new_target" value="&quot;test_utils.TestGetCurrency.test_http_error&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -188,7 +188,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.test_get_stocks_none_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_views.test_top_operations_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,17 +199,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.test_get_stocks_none_price&quot;" />
+      <option name="_new_target" value="&quot;test_views.test_top_operations_basic&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests for test_views.test_top_operations_basic" />
+        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_http_error" />
+        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response" />
         <item itemvalue="Python tests.Python tests for test_reports.test_spending_by_category_basic" />
-        <item itemvalue="Python tests.Python tests for test_utils.test_get_stocks_none_price" />
-        <item itemvalue="Python tests.Python tests for test_services.test_simple_search_by_description" />
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +308,58 @@
       <option name="project" value="LOCAL" />
       <updated>1756303933337</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Main func done">
+      <option name="closed" value="true" />
+      <created>1756304588423</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756304588423</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Main func done">
+      <option name="closed" value="true" />
+      <created>1756304610067</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756304610067</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="kursa4_1" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
