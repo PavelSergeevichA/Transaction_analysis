@@ -1,3 +1,4 @@
+import logging
 import re
 from collections import Counter
 from datetime import datetime, timedelta
@@ -6,16 +7,29 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
+logger = logging.getLogger("views")
+logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler("../logs/views.log", mode="w", encoding="utf-8")
+file_formatter = logging.Formatter(
+    "%(asctime)s - %(name)s - %(levelname)s: %(message)s"
+)
+file_handler.setFormatter(file_formatter)
+logger.addHandler(file_handler)
+
 
 def daypart(operation_date: str) -> str:
     """Отдает нужное приветствие, в зависимости от времени"""
     if 6 <= int(operation_date[11:13]) < 12:
+        logger.info("Время суток определено")
         return "Доброе утро"
     elif 12 <= int(operation_date[11:13]) < 18:
+        logger.info("Время суток определено")
         return "Добрый день"
     elif 18 <= int(operation_date[11:13]) < 24:
+        logger.info("Время суток определено")
         return "Добрый вечер"
     else:
+        logger.info("Время суток определено")
         return "Доброй ночи"
 
 
@@ -35,6 +49,7 @@ def sort_by_date(
     df = pd.DataFrame(operations_this_month)
     df = df.replace({np.nan: None})
     data_cleaned = df.to_dict("records")
+    logger.info("Транзакции отсортированы по датам")
     return data_cleaned
 
 

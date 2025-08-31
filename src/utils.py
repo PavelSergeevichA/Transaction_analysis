@@ -13,7 +13,7 @@ API_KEY = os.getenv("API_KEY")
 
 logger = logging.getLogger("utils")
 logger.setLevel(logging.DEBUG)
-file_handler = logging.FileHandler("D:/Projects/Transaction_analysis/logs/utils.log", mode="w", encoding="utf-8")
+file_handler = logging.FileHandler("../logs/utils.log", mode="w", encoding="utf-8")
 file_formatter = logging.Formatter(
     "%(asctime)s - %(name)s - %(levelname)s: %(message)s"
 )
@@ -21,7 +21,7 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 
-def get_operations_excel(input_file_excel) -> list:
+def get_operations_excel(input_file_excel) -> list[dict]:
     """Возвращает список транзакций, загруженный из файла excel"""
     df = pd.read_excel(input_file_excel)
     operations = df.where(pd.notnull(df), None).to_dict(orient="records")
