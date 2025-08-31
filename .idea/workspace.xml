@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Main func done">
+    <list default="true" id="823a57d1-2830-4aa1-aaf7-43da57eda1bd" name="Changes" comment="Readme fixed">
+      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,67 +58,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for test_reports.test_spending_by_category_basic.executor": "Run",
-    "Python tests.Python tests for test_services.test_simple_search_by_description.executor": "Run",
-    "Python tests.Python tests for test_services.test_simple_search_empty_request.executor": "Run",
-    "Python tests.Python tests for test_services.test_simple_search_whitespace_request.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_connection_error.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_empty_user_currencies.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_http_error.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_json_parsing_error.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_missing_user_currencies_key.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_empty_file.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_file_with_nulls.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_mock_read_excel.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_nan_values_converted_to_none.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_nonexistent_file.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_successful_file_loading.executor": "Run",
-    "Python tests.Python tests for test_utils.TestGetOperationsExcel.test_wrong_file_format.executor": "Run",
-    "Python tests.Python tests for test_utils.test_get_stocks_empty_list.executor": "Run",
-    "Python tests.Python tests for test_utils.test_get_stocks_missing_current_price.executor": "Run",
-    "Python tests.Python tests for test_utils.test_get_stocks_none_price.executor": "Run",
-    "Python tests.Python tests for test_utils.test_get_stocks_single_stock.executor": "Run",
-    "Python tests.Python tests for test_utils.test_get_stocks_success.executor": "Run",
-    "Python tests.Python tests for test_utils.test_open_json_empty_file.executor": "Run",
-    "Python tests.Python tests for test_utils.test_open_json_empty_list.executor": "Run",
-    "Python tests.Python tests for test_utils.test_open_json_file_not_found.executor": "Run",
-    "Python tests.Python tests for test_utils.test_open_json_invalid_json.executor": "Run",
-    "Python tests.Python tests for test_utils.test_open_json_success.executor": "Run",
-    "Python tests.Python tests for test_views.test_average_spent_basic.executor": "Run",
-    "Python tests.Python tests for test_views.test_date_list_first_day.executor": "Run",
-    "Python tests.Python tests for test_views.test_date_list_middle_of_month.executor": "Run",
-    "Python tests.Python tests for test_views.test_date_list_single_day.executor": "Run",
-    "Python tests.Python tests for test_views.test_daypart.executor": "Run",
-    "Python tests.Python tests for test_views.test_operation_counts_all_none.executor": "Run",
-    "Python tests.Python tests for test_views.test_operation_counts_basic.executor": "Run",
-    "Python tests.Python tests for test_views.test_operation_counts_empty_list.executor": "Run",
-    "Python tests.Python tests for test_views.test_operation_counts_single_card.executor": "Run",
-    "Python tests.Python tests for test_views.test_operation_counts_with_none.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_case_insensitive.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_empty_input.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_month_filter.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_multiple_dates.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_no_matches.executor": "Run",
-    "Python tests.Python tests for test_views.test_sort_by_date_single_date.executor": "Run",
-    "Python tests.Python tests for test_views.test_top_operations_basic.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.services.executor": "Run",
-    "Python.utils.executor": "Run",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/kursovaya",
-    "last_opened_file_path": "D:/Projects/Transaction_analysis",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_reports.test_spending_by_category_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_services.test_simple_search_by_description.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_services.test_simple_search_empty_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_services.test_simple_search_whitespace_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_connection_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_empty_user_currencies.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_http_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_json_parsing_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_missing_user_currencies_key.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_empty_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_file_with_nulls.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_mock_read_excel.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_nan_values_converted_to_none.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_nonexistent_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_successful_file_loading.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestGetOperationsExcel.test_wrong_file_format.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_stocks_empty_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_stocks_missing_current_price.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_stocks_none_price.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_stocks_single_stock.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_stocks_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_open_json_empty_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_open_json_empty_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_open_json_file_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_open_json_invalid_json.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_open_json_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_average_spent_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_date_list_first_day.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_date_list_middle_of_month.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_date_list_single_day.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_daypart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_operation_counts_all_none.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_operation_counts_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_operation_counts_empty_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_operation_counts_single_card.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_operation_counts_with_none.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_case_insensitive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_empty_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_month_filter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_multiple_dates.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_no_matches.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_sort_by_date_single_date.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_views.test_top_operations_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.services.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on feature/kursovaya&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Transaction_analysis/.venv&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Transaction_analysis\.venv" />
       <recent name="D:\Projects\Transaction_analysis" />
       <recent name="D:\Projects\Transaction_analysis\data" />
     </key>
@@ -143,7 +152,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_reports.test_spending_by_category_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.TestGetCurrency" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,11 +163,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_reports.test_spending_by_category_basic&quot;" />
+      <option name="_new_target" value="&quot;test_utils.TestGetCurrency&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.TestGetCurrency.test_http_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.test_get_stocks_none_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,11 +178,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestGetCurrency.test_http_error&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_get_stocks_none_price&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.TestGetCurrency.test_successful_response" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.test_get_stocks_single_stock" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,11 +193,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestGetCurrency.test_successful_response&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_get_stocks_single_stock&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_views.test_top_operations_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.test_get_stocks_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Transaction_analysis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,17 +208,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_views.test_top_operations_basic&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_get_stocks_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests for test_views.test_top_operations_basic" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_http_error" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency.test_successful_response" />
-        <item itemvalue="Python tests.Python tests for test_reports.test_spending_by_category_basic" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_get_stocks_none_price" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_get_stocks_single_stock" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_get_stocks_success" />
+        <item itemvalue="Python tests.Python tests for test_utils.TestGetCurrency" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756304610067</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Readme fixed">
+      <option name="closed" value="true" />
+      <created>1756305647126</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756305647126</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,6 +391,7 @@
     <MESSAGE value="Got tests for views.py" />
     <MESSAGE value="Small fixes" />
     <MESSAGE value="Main func done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main func done" />
+    <MESSAGE value="Readme fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme fixed" />
   </component>
 </project>

@@ -1,4 +1,7 @@
 import json
+
+from src.reports import spending_by_category
+from src.services import simple_search
 from utils import get_operations_excel, get_currency, open_json, get_stocks
 from views import (average_spent, date_list, daypart, operation_counts,
                    sort_by_date, top_operations)
@@ -26,5 +29,12 @@ if __name__ == "__main__":
         "stock_prices": stock_prices
     }
 
-    json_data = json.dumps(answer)
+    json_data = json.dumps(answer, ensure_ascii=False, indent=4)
     print(json_data)
+
+    users_request = input("Введите запрос для поиска по категориям и описанию: ")
+    operations_by_users_request = simple_search(transactions=operations, users_request=users_request)
+    print(operations_by_users_request)
+
+    result = spending_by_category(all_operations, 'Фастфуд', operation_date)
+    print(f"Найдено записей: {len(result)}")

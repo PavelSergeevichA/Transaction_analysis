@@ -2,7 +2,7 @@ from collections import Counter
 
 import pytest
 
-from src.views import average_spent, date_list, daypart, operation_counts, sort_by_date, top_operations
+from src.views import average_spent, date_list, daypart, operation_counts, sort_by_date
 
 
 @pytest.mark.parametrize("time_str, expected", [
