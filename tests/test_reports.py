@@ -1,6 +1,4 @@
 import pandas as pd
-import pytest
-from datetime import datetime, timedelta
 
 from src.reports import spending_by_category
 
